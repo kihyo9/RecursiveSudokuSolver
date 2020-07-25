@@ -13,4 +13,4 @@ def possible(y,x,n):
 			for j in range(0,3):
 				if grid[y0+1][x0+j] == n:
 					return False
-	return True
+	return True #this is a comment
