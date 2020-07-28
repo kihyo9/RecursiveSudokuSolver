@@ -24,7 +24,7 @@ def possible(y,x,n):
 
 	for i in range(0,3):
 			for j in range(0,3):
-				if grid[y0+1][x0+j] == n:
+				if grid[y0+i][x0+j] == n:
 					return False
 	return True
 #Solve the sudoku
@@ -37,7 +37,7 @@ def solve():
           if possible(y,x,n):
             grid[y][x] = n
             solve()
-            #grid[y][x] = 0
+            grid[y][x] = 0
         return
   print(np.matrix(grid))
   input("More?")
